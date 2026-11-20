@@ -1,0 +1,13 @@
+# 请求
+string target_color    # 目标颜色: red / green / blue
+---
+# 响应
+bool success           # 是否识别成功
+string message         # 结果描述
+int32 count            # 识别到的方块数量
+string[] colors        # 每个方块的颜色
+int32[] centers_x      # 每个方块中心的像素 x 坐标
+int32[] centers_y      # 每个方块中心的像素 y 坐标
+int32[] widths         # 每个方块外接矩形宽度（像素）
+int32[] heights        # 每个方块外接矩形高度（像素）
+int32[] areas          # 每个方块轮廓面积（像素）
